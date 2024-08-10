@@ -1,0 +1,6 @@
+.person-image {width:100px; height:100px;}
+.person-image img {width:100%; height:100%; border-radius:100%; object-fit:cover;}
+.person-item {display:flex; align-items:center; gap:20px;}
+.person-name {font-size:17px; font-weight:700;}
+.person-item + .person-item {margin-top:15px;}
+.personAge {font-size:15px;}

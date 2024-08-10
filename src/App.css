@@ -1,0 +1,8 @@
+.person-boxList {display:flex; align-items:center; justify-content:center; height:auto; max-width:600px; margin:30px auto;}
+.container {width:100%; background:#fff; border-radius:10px; box-shadow:1px 1px 10px rgb(0 0 0 / 29%); padding:20px;}
+.app-title {font-weight:500; margin:0 0 20px; font-size:20px}
+.clear-btn {border:0; background:#f28ab2; color:#fff; height:40px; width:100%; border-radius:10px; font-size:18px; text-transform:uppercase; margin-top:20px; cursor:pointer;}
+
+@media (min-width:768px) {
+.person-boxList {height:100%; margin:auto;}
+}
