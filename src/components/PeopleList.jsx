@@ -1,19 +1,28 @@
 
 import './PeopleList.css'
-const peopleList = ({personImage,personName,personAge})=>{
-    return(
+const PeopleList = ({ peopleListItems }) => {
+    return (
         <>
-            <div className="person-item">
-                <div className="person-image">
-                    <img src={personImage} alt="" />
-                </div>
-                <div className="personDetail">
-                    <div className="person-name">{personName}</div>
-                    <div className="personAge"><strong>Age:</strong> {personAge}</div>
-                </div>
-            </div>
+
+            {
+                peopleListItems.map(person =>
+                    <div className="person-item" key={person.id}>
+                        <div className="person-image">
+                            <img src={person.image} alt="" />
+                        </div>
+                        <div className="personDetail">
+                            <div className="person-name">{person.name}</div>
+                            <div className="personAge"><strong>Age:</strong> {person.age}</div>
+                        </div>
+                    </div>
+                )
+            }
+
+
         </>
     )
 }
 
-export default peopleList
+export default PeopleList
+
+
